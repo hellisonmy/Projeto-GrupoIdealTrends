@@ -1,0 +1,276 @@
+:root {
+    --cor--black: black;
+    --cor--gray: gray;
+    --cor--headercontact: #020085;
+    --cor--backgroud: #454545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    color: var(--cor--gray);
+}
+
+.header-contact {
+    display: flex;
+    background-color: var(--cor--headercontact);
+    justify-content: flex-end;
+    color: white;
+    padding: 0% 15%;
+    gap: 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0% 15%;
+    overflow: hidden;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.textcontact {
+    display: flex;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    align-items: end;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    width: 95px;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: var(--cor--headercontact);
+    margin-left: -40px;
+    z-index: 1000;
+}
+
+nav ul li:hover .sub-menu-1 ul {
+    display: block;
+}
+
+nav ul li:hover .sub-menu-1 ul li {
+    width: 135px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.10s;
+    font-size: 13px;
+}
+
+nav ul li:hover .sub-menu-1 ul li:hover {
+    background-color: #025e68;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover-sub:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background-color: var(--cor--headercontact);
+    margin-top: -23px;
+    left: 140px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 15%;
+}
+
+.image-secondtext {
+    width: 50%;
+}
+
+.sub__buttons:hover {
+    color: var(--cor--black);
+}
+
+.sub__buttons {
+    display: flex;
+    text-decoration: none;
+    color: var(--cor--gray);
+    padding: 10px;
+}
+
+.main-text {
+    display: flex;
+    font-size: 1.12rem;
+    flex-direction: column;
+}
+
+.sub-title {
+    font-size: 0.90rem;
+    padding: 10px 0px 0px 0px;
+    width: 90%;
+}
+
+.text {
+    font-size: 0.75rem;
+    padding: 15px 0px;
+    width: 90%;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 3%;
+    gap: 30px;
+    width: 100%;
+}
+
+.boxes__items {
+    justify-content: center;
+    padding: 1% 15%;
+    width: 100%;
+}
+
+.image-maintext {
+    width: 100%;
+}
+
+.border {
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgb(56, 53, 53);
+    border-radius: 5px;
+}
+
+.boxes h1 {
+    margin-bottom: 35px;
+}
+
+.sub__buttonsbox:hover {
+    color: var(--cor--black);
+}
+
+.sub__buttonsbox {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    color: var(--cor--gray);
+    font-size: 12px;
+    padding: 8px;
+}
+
+.box_buttonsfinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 0% 15%;
+    width: 100%;
+}
+
+.sub__buttonsfinals:hover {
+    color: var(--cor--black);
+}
+
+.sub__buttonsfinals {
+    display: flex;
+    text-decoration: none;
+    color: rgb(171, 171, 171);
+    padding: 5px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor--backgroud);
+    padding: 1%;
+    width: 100%;
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5% 15% 5% 15%;
+}
+
+@media screen and (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .boxes {
+        padding: 10%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .boxes__items {
+        padding: 1% 10%;
+    }
+
+    .box_buttonsfinal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-title,
+    .text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .boxes {
+        align-items: center;
+    }
+}
